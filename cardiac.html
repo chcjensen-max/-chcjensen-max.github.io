@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Adult Cardiothoracic Anesthesiology — Anesthesia Journal Club</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-page="cardiac">
+<header class="site-header"><div id="site-header"></div></header>
+
+<main id="cardiacRoot">
+  <p class="eyebrow">Adult Cardiothoracic Anesthesiology</p>
+  <h1 class="page-title">Cardiac Journal Club</h1>
+  <p class="page-dek">Better living through extracorporeal circuitry.</p>
+  <p class="lede">
+    Papers reviewed by the cardiac anesthesiology fellowship, organized by academic year, with the
+    clinical question, methods, and take-away for each where available.
+  </p>
+
+  <div class="tabbar" id="cardiacTabs">
+    <button data-target="high-impact" id="tab-high-impact">High Impact Articles</button>
+    <!-- year tab buttons are injected by JS from CARDIAC_DATA -->
+  </div>
+
+  <div class="year-panel" id="high-impact">
+    <div class="meta-line" id="cardiacHighImpactSubtitle"></div>
+    <div id="cardiacRepository"></div>
+  </div>
+
+  <!-- year panels injected by JS -->
+</main>
+
+<footer class="site-footer"><div id="site-footer"></div></footer>
+
+<script src="data/cardiac-data.js"></script>
+<script src="js/render.js"></script>
+<script src="js/components.js"></script>
+<script>
+  (function () {
+    const root = document.getElementById("cardiacRoot");
+    const tabbar = document.getElementById("cardiacTabs");
+
+    document.getElementById("cardiacHighImpactSubtitle").textContent = CARDIAC_DATA.highImpact.subtitle;
+    document.getElementById("cardiacRepository").innerHTML = renderRepository(CARDIAC_DATA.highImpact.categories);
+
+    CARDIAC_DATA.years.forEach((year) => {
+      const btn = document.createElement("button");
+      btn.dataset.target = year.id;
+      btn.textContent = year.label;
+      tabbar.appendChild(btn);
+
+      const panel = document.createElement("div");
+      panel.className = "year-panel";
+      panel.id = year.id;
+      panel.innerHTML = renderPapers(year.papers);
+      root.appendChild(panel);
+    });
+
+    initYearTabs("cardiacRoot");
+  })();
+</script>
+</body>
+</html>
