@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Critical Care Medicine Journal Club — 2026–2027</title>
+<meta name="description" content="Critical Care Medicine journal club schedule, 2026–2027 academic year.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+
+<script>
+/* ============================================================================
+   EDIT EVERYTHING HERE. Nothing below this block needs to be touched.
+
+   To add a session, copy one { ... } chunk inside `sessions` and change it.
+   To add a paper, add { title: "...", url: "..." } to a papers list.
+
+   date:  always "YYYY-MM-DD". The weekday ("Wednesday") is worked out for you.
+   kind:  "ebm" | "deep" | "didactic"  — only controls the colour of the tag.
+   Any field you don't need, just delete the line.
+   Leave papers: [] and the section shows "To be announced."
+   ========================================================================== */
+
+const PAGE = {
+
+  program:  "Critical Care Medicine",
+  subtitle: "Journal Club",
+  year:     "2026 – 2027",
+
+  // Short lines that sit under the title.
+  meta: [
+    "Wednesday afternoons, August 2026 through July 2027",
+    "Presbyterian Hospital, 5th Floor Sim Center Conference Room unless noted"
+  ],
+
+  // Free paragraphs of introduction. Add or remove as you like.
+  intro: [
+    "Sessions run about 90 minutes across the academic year. We take a break between the two halves when time allows."
+  ],
+
+  // The two standing components of each session.
+  formats: [
+    {
+      kind:    "ebm",
+      name:    "EBM Review",
+      minutes: "45 min",
+      summary: "The papers that form the evidence base for our specialty.",
+      detail:  "Fellows are expected to read every paper before the session. One fellow presents each assigned article in 5–6 minutes: why the study was done, the major methodologic points, results in brief, and whether it should guide practice."
+    },
+    {
+      kind:    "deep",
+      name:    "Deep Dive",
+      minutes: "30 min",
+      summary: "A close look at a very recent paper with the potential to change practice.",
+      detail:  "Fellows and faculty work through one or two articles in detail — study design, data analysis, interpretation of results. The goal is to build the skills you will use to read the literature long after fellowship."
+    }
+  ],
+
+  sessions: [
+
+    {
+      number: "1",
+      title:  "Healthcare Disparities",
+      date:   "2025-08-06",
+      role:   "Guest Lecturer",
+      person: "Meghan Lane-Fall, MD, MSHP, FCCM",
+      affiliation: "Professor and Chair of Anesthesiology, Columbia University Vagelos College of Physicians and Surgeons; Anesthesiologist-in-Chief, NewYork-Presbyterian/Columbia University Medical Center",
+      groups: [
+        { kind: "didactic", label: "Didactic", papers: [] }
+      ]
+    },
+
+    {
+      number: "1.5",
+      title:  "Introduction to Randomized Clinical Trials",
+      date:   "2025-08-07",
+      role:   "Moderator",
+      person: "Aaron Mittel, MD, MSc",
+      groups: [
+        { kind: "didactic", label: "Reading", papers: [
+          { title: "Understanding Randomised Clinical Trials", url: "https://adc.bmj.com/content/90/8/840" }
+        ]}
+      ]
+    },
+
+    {
+      number: "2",
+      title:  "Sepsis",
+      date:   "2025-09-10",
+      role:   "Moderator",
+      person: "Elvedin Lukovic, MD, PhD",
+      groups: [
+        { kind: "ebm", label: "EBM papers", papers: [
+          { title: "EGDT (Rivers)", url: "https://www.nejm.org/doi/full/10.1056/NEJMoa010307" },
+          { title: "ProCESS, ProMISe, ARISE meta-analysis", url: "https://pubmed.ncbi.nlm.nih.gov/25952825/" },
+          { title: "ANDROMEDA-SHOCK", url: "https://jamanetwork.com/journals/jama/fullarticle/2724361" },
+          { title: "Association between US norepinephrine shortage and mortality", url: "https://jamanetwork.com/journals/jama/fullarticle/2612912" }
+        ]},
+        { kind: "deep", label: "Deep Dive", papers: [
+          { title: "Prolonged infusion of beta-lactam antibiotics and short-term mortality — meta-analysis", url: "https://www.sciencedirect.com/science/article/pii/S2213716525001730?via%3Dihub" },
+          { title: "Iloprost for severe septic shock with persistent hypoperfusion — RCT", note: "AJRCCM, 2024", url: "https://www.atsjournals.org/doi/full/10.1164/rccm.202410-1924OC" }
+        ]}
+      ]
+    },
+
+    {
+      number: "3",
+      title:  "Observational Research",
+      date:   "2025-10-08",
+      role:   "Guest Lecturer",
+      person: "May Hua, MD, MSc",
+      affiliation: "Associate Professor of Anesthesiology (in Epidemiology), CUMC",
+      groups: [
+        { kind: "didactic", label: "Didactic and Deep Dive", papers: [
+          { title: "Comparative effectiveness of fludrocortisone and hydrocortisone vs hydrocortisone alone in septic shock", url: "https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/2802801" }
+        ]}
+      ]
+    },
+
+    {
+      number: "4",
+      title:  "Respiratory Failure",
+      date:   "2025-11-12",
+      role:   "Moderator",
+      person: "Elvedin Lukovic, MD, PhD",
+      groups: [
+        { kind: "ebm", label: "EBM papers", papers: [
+          { title: "ARMA", url: "https://www.nejm.org/doi/full/10.1056/nejm200005043421801" },
+          { title: "ALVEOLI", url: "https://www.nejm.org/doi/full/10.1056/NEJMoa032193" },
+          { title: "EPVent-2", url: "https://jamanetwork.com/journals/jama/fullarticle/2725206" },
+          { title: "PROSEVA", url: "https://www.nejm.org/doi/full/10.1056/nejmoa1214103" },
+          { title: "ACURASYS", url: "https://www.nejm.org/doi/full/10.1056/nejmoa1005372" },
+          { title: "ROSE", url: "https://www.nejm.org/doi/full/10.1056/nejmoa1901686" },
+          { title: "EOLIA", url: "https://www.nejm.org/doi/full/10.1056/NEJMoa1800385" }
+        ]},
+        { kind: "deep", label: "Deep Dive", papers: [
+          { title: "PROMIZING — RCT", note: "NEJM, 2025", url: "https://www.nejm.org/doi/10.1056/NEJMoa2505708" }
+        ]}
+      ]
+    },
+
+    {
+      number: "5",
+      title:  "Oxygen Use in the ICU",
+      date:   "2025-12-10",
+      role:   "Moderator",
+      person: "Aaron Mittel, MD, MSc",
+      groups: [
+        { kind: "ebm", label: "EBM papers", papers: [
+          { title: "Oxygen-ICU", url: "https://jamanetwork.com/journals/jama/fullarticle/2565306" },
+          { title: "ICU-ROX", url: "https://www.nejm.org/doi/full/10.1056/NEJMoa1903297" },
+          { title: "HOT-ICU", url: "https://www.nejm.org/doi/10.1056/NEJMoa2032510" },
+          { title: "BOX", url: "https://www.nejm.org/doi/10.1056/NEJMoa2208686" },
+          { title: "PILOT", url: "https://www.nejm.org/doi/full/10.1056/NEJMoa2208415" },
+          { title: "ICONIC", url: "https://www.atsjournals.org/doi/abs/10.1164/rccm.202303-0560OC" }
+        ]},
+        { kind: "deep", label: "Deep Dive", papers: [
+          { title: "UK-ROX", note: "JAMA, 2025", url: "https://jamanetwork.com/journals/jama/fullarticle/2835384" },
+          { title: "UK-ROX editorial", url: "https://jamanetwork.com/journals/jama/fullarticle/2835385" }
+        ]}
+      ]
+    },
+
+    {
+      number: "6",
+      title:  "Sedatives",
+      date:   "2026-01-14",
+      role:   "Moderator",
+      person: "Elvedin Lukovic, MD, PhD",
+      groups: [
+        { kind: "ebm", label: "EBM papers", papers: [
+          { title: "Daily interruption of sedation", url: "https://www.nejm.org/doi/full/10.1056/nejm200005183422002" },
+          { title: "SLEAP", url: "https://jamanetwork.com/journals/jama/fullarticle/1380160" },
+          { title: "NONSEDA", url: "https://www.nejm.org/doi/full/10.1056/NEJMoa1906759" },
+          { title: "AID-ICU", url: "https://www.nejm.org/doi/full/10.1056/NEJMoa2211868" },
+          { title: "MIND-USA", url: "https://www.nejm.org/doi/10.1056/NEJMoa1808217" },
+          { title: "Antipsychotics and the QTc interval during delirium in the ICU — secondary analysis", url: "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2814118" }
+        ]},
+        { kind: "deep", label: "Deep Dive", papers: [
+          { title: "A2B — RCT", note: "JAMA, 2025", url: "https://jamanetwork.com/journals/jama/fullarticle/2834276" },
+          { title: "A2B editorial", url: "https://jamanetwork.com/journals/jama/fullarticle/2834277" }
+        ]}
+      ]
+    },
+
+    {
+      number: "7",
+      title:  "Mechanical Circulatory Support",
+      date:   "2026-02-18",
+      role:   "Moderator",
+      person: "Elvedin Lukovic, MD, PhD",
+      groups: [
+        { kind: "ebm", label: "EBM papers", papers: [
+          { title: "ECLS-SHOCK", url: "https://www.nejm.org/doi/full/10.1056/NEJMoa2307227" },
+          { title: "IABP for cardiogenic shock", url: "https://www.nejm.org/doi/full/10.1056/NEJMoa1208410" },
+          { title: "eCPR for OHCA", url: "https://www.nejm.org/doi/full/10.1056/NEJMoa2204511" },
+          { title: "ARREST", url: "https://www.thelancet.com/article/S0140-6736(20)32338-2/fulltext" },
+          { title: "MOMENTUM 3 — five-year outcomes", url: "https://jamanetwork.com/journals/jama/fullarticle/2796306" },
+          { title: "DanGer Shock", url: "https://www.nejm.org/doi/full/10.1056/NEJMoa2312572" }
+        ]},
+        { kind: "deep", label: "Deep Dive", papers: [
+          { title: "High normocapnia and functional outcome in VA-ECMO after OHCA", note: "CHEST, 2025", url: "https://journal.chestnet.org/article/S0012-3692(25)00062-5/fulltext" }
+        ]}
+      ]
+    },
+
+    {
+      number: "8",
+      title:  "Renal Failure",
+      date:   "2026-03-18",
+      role:   "Moderator",
+      person: "Elvedin Lukovic, MD, PhD",
+      groups: [
+        { kind: "ebm", label: "EBM papers", papers: [
+          { title: "AKIKI", url: "https://www.nejm.org/doi/full/10.1056/NEJMoa1603017" },
+          { title: "STARRT-AKI", url: "https://www.nejm.org/doi/full/10.1056/nejmoa2000741" },
+          { title: "IDEAL-ICU", url: "https://www.nejm.org/doi/full/10.1056/NEJMoa1803213" },
+          { title: "RENAL", url: "https://www.nejm.org/doi/full/10.1056/nejmoa0902413" },
+          { title: "AKIKI 2", url: "https://www.thelancet.com/pdfs/journals/lancet/PIIS0140-6736(21)00350-0.pdf" }
+        ]},
+        { kind: "deep", label: "Deep Dive", papers: [
+          { title: "Early vs standard RRT after type A aortic dissection", note: "Ann Thorac Surg, 2025", url: "https://www.annalsthoracicsurgery.org/article/S0003-4975(25)00003-7/fulltext" }
+        ]}
+      ]
+    },
+
+    {
+      number: "9",
+      title:  "Nutrition",
+      date:   "2026-04-15",
+      role:   "Moderator",
+      person: "Elvedin Lukovic, MD, PhD",
+      groups: [
+        { kind: "ebm", label: "EBM papers", papers: [
+          { title: "TARGET", url: "https://www.nejm.org/doi/full/10.1056/NEJMoa1811687" },
+          { title: "PermiT", url: "https://www.nejm.org/doi/full/10.1056/NEJMoa1502826" },
+          { title: "EPaNIC", url: "https://www.nejm.org/doi/full/10.1056/NEJMoa1102662" },
+          { title: "EDEN", url: "https://jamanetwork.com/journals/jama/fullarticle/1355969" },
+          { title: "Optimisation of energy provision with supplementary parenteral nutrition", url: "https://www.sciencedirect.com/science/article/pii/S0140673612613518?via%3Dihub" }
+        ]},
+        { kind: "deep", label: "Deep Dive", papers: [
+          { title: "TARGET Protein", note: "JAMA, 2025", url: "https://jamanetwork.com/journals/jama/fullarticle/2835302" }
+        ]}
+      ]
+    },
+
+    {
+      number: "10",
+      title:  "IV Fluids",
+      date:   "2026-05-13",
+      role:   "Moderator",
+      person: "Elvedin Lukovic, MD, PhD",
+      groups: [
+        { kind: "ebm", label: "EBM papers", papers: [
+          { title: "SAFE", url: "https://www.nejm.org/doi/full/10.1056/nejmoa040232" },
+          { title: "SMART", url: "https://www.nejm.org/doi/full/10.1056/nejmoa1711584" },
+          { title: "CRISTAL", url: "https://jamanetwork.com/journals/jama/fullarticle/1752245" },
+          { title: "ALBIOS", url: "https://www.nejm.org/doi/full/10.1056/nejmoa1305727" },
+          { title: "HES vs saline", url: "https://www.nejm.org/doi/full/10.1056/NEJMoa1209759" }
+        ]},
+        { kind: "deep", label: "Deep Dive", papers: [
+          { title: "FLUID", note: "NEJM, 2025", url: "https://www.nejm.org/doi/10.1056/NEJMoa2416761" }
+        ]}
+      ]
+    },
+
+    {
+      number: "11",
+      title:  "Fellow Choice — topic to be decided",
+      date:   "2026-06-10",
+      role:   "Moderator",
+      person: "Elvedin Lukovic, MD, PhD",
+      groups: [
+        { kind: "deep", label: "Deep Dive", papers: [] }
+      ]
+    },
+
+    {
+      number: "12",
+      title:  "Make-up Session",
+      date:   "2026-07-15",
+      role:   "Moderator",
+      person: "Elvedin Lukovic, MD, PhD",
+      note:   "Held only if an earlier session is cancelled.",
+      groups: []
+    }
+  ]
+};
+
+/* Optional: how a journal's web address should be labelled on a link.
+   Anything not listed here just shows its domain name. */
+const JOURNALS = {
+  "nejm.org": "NEJM",
+  "jamanetwork.com": "JAMA",
+  "thelancet.com": "The Lancet",
+  "atsjournals.org": "ATS Journals",
+  "pubmed.ncbi.nlm.nih.gov": "PubMed",
+  "sciencedirect.com": "ScienceDirect",
+  "journal.chestnet.org": "CHEST",
+  "annalsthoracicsurgery.org": "Ann Thorac Surg",
+  "adc.bmj.com": "BMJ"
+};
+
+/* ===== END OF EDITABLE CONTENT ============================================ */
+</script>
+
+<style>
+:root{
+  --paper:#EEF1EF;
+  --card:#FFFFFF;
+  --ink:#101A17;
+  --ink-2:#54625D;
+  --ink-3:#8B9792;
+  --rule:#D2D9D6;
+  --rule-soft:#E3E8E6;
+  --accent:#0B6B57;
+  --accent-soft:#E0EFE9;
+  --alarm:#B3261E;
+  --alarm-soft:#FAE7E5;
+  --display:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;
+  --body:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  --shell:1180px;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:var(--body);
+  font-size:17px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+
+.shell{max-width:var(--shell);margin:0 auto;padding:0 24px}
+
+/* ---------- masthead ---------- */
+.masthead{border-bottom:1px solid var(--rule);background:var(--card)}
+.masthead-in{display:flex;align-items:baseline;gap:14px;padding:16px 24px;max-width:var(--shell);margin:0 auto}
+.mark{
+  font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--accent);
+}
+.mark-sub{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3)}
+
+/* ---------- hero ---------- */
+.hero{padding:72px 0 40px}
+.hero h1{
+  font-family:var(--display);
+  font-weight:800;
+  font-size:clamp(2.6rem,7vw,4.6rem);
+  line-height:.98;
+  letter-spacing:-.03em;
+  margin:0;
+  max-width:14ch;
+}
+.hero-year{
+  font-family:var(--mono);font-weight:500;
+  font-size:clamp(1rem,2.2vw,1.35rem);
+  letter-spacing:.22em;color:var(--accent);
+  margin:0 0 18px;
+}
+.hero-meta{margin:28px 0 0;padding:0;list-style:none;border-top:1px solid var(--rule);max-width:56ch}
+.hero-meta li{
+  font-family:var(--mono);font-size:12.5px;line-height:1.55;color:var(--ink-2);
+  padding:11px 0;border-bottom:1px solid var(--rule-soft);
+}
+.hero-intro{max-width:56ch;margin:26px 0 0;color:var(--ink-2)}
+.hero-intro p{margin:0 0 12px}
+
+/* ---------- format cards ---------- */
+.formats{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));margin:0 0 64px}
+.format{background:var(--card);border:1px solid var(--rule);border-radius:4px;padding:24px}
+.format-head{display:flex;align-items:center;gap:10px;margin-bottom:14px;flex-wrap:wrap}
+.format h2{font-family:var(--display);font-size:1.25rem;font-weight:700;letter-spacing:-.01em;margin:0}
+.format-summary{margin:0 0 10px;font-weight:600}
+.format-detail{margin:0;font-size:15.5px;color:var(--ink-2)}
+
+.tag{
+  font-family:var(--mono);font-size:10.5px;font-weight:600;letter-spacing:.13em;
+  text-transform:uppercase;padding:4px 8px;border-radius:2px;white-space:nowrap;
+}
+.tag-ebm{background:var(--accent-soft);color:var(--accent)}
+.tag-deep{background:var(--alarm-soft);color:var(--alarm)}
+.tag-didactic{background:#E7EAE9;color:var(--ink-2)}
+
+/* ---------- two-column body ---------- */
+.body-grid{display:grid;grid-template-columns:1fr;gap:0;padding-bottom:96px}
+@media(min-width:1000px){
+  .body-grid{grid-template-columns:210px 1fr;gap:56px}
+}
+
+.index{display:none}
+@media(min-width:1000px){
+  .index{display:block;position:sticky;top:28px;align-self:start;max-height:calc(100vh - 56px);overflow:auto}
+}
+.index-title{
+  font-family:var(--mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--ink-3);margin:0 0 12px;padding-bottom:10px;border-bottom:1px solid var(--rule);
+}
+.index a{
+  display:flex;gap:10px;text-decoration:none;font-family:var(--mono);font-size:12px;
+  color:var(--ink-2);padding:6px 0;line-height:1.4;
+}
+.index a:hover{color:var(--accent)}
+.index a[data-next="true"]{color:var(--alarm);font-weight:600}
+.index .idx-num{color:var(--ink-3);min-width:26px}
+.index a[data-next="true"] .idx-num{color:var(--alarm)}
+
+/* ---------- sessions ---------- */
+.session{
+  background:var(--card);border:1px solid var(--rule);border-radius:4px;
+  padding:26px;margin-bottom:14px;scroll-margin-top:24px;
+}
+.session[data-next="true"]{border-color:var(--alarm);box-shadow:0 0 0 3px var(--alarm-soft)}
+.session[data-past="true"] .date-day,
+.session[data-past="true"] .date-weekday{opacity:.42}
+
+.session-top{display:grid;grid-template-columns:1fr;gap:18px}
+@media(min-width:640px){.session-top{grid-template-columns:96px 1fr;gap:26px}}
+
+.date-rail{border-left:2px solid var(--accent);padding-left:12px}
+.session[data-next="true"] .date-rail{border-left-color:var(--alarm)}
+.date-weekday{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3)}
+.date-day{font-family:var(--display);font-size:2.4rem;font-weight:800;line-height:1;letter-spacing:-.04em;margin:2px 0}
+.date-month{font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2)}
+
+.session-eyebrow{display:flex;align-items:center;gap:10px;margin-bottom:6px;flex-wrap:wrap}
+.session-num{font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3)}
+.badge-next{
+  font-family:var(--mono);font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+  background:var(--alarm);color:#fff;padding:3px 8px;border-radius:2px;
+}
+.session h3{
+  font-family:var(--display);font-size:clamp(1.35rem,3vw,1.7rem);font-weight:700;
+  letter-spacing:-.02em;line-height:1.15;margin:0 0 12px;
+}
+.person{font-family:var(--mono);font-size:12.5px;color:var(--ink-2);margin:0}
+.person .role{color:var(--ink-3)}
+.affiliation{font-style:italic;font-size:15px;color:var(--ink-2);margin:8px 0 0;max-width:62ch}
+.session-note{font-size:15px;color:var(--ink-2);margin:10px 0 0;font-style:italic}
+
+.groups{margin-top:22px;display:grid;gap:18px}
+.group-head{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.group-rule{flex:1;height:1px;background:var(--rule-soft)}
+
+.papers{list-style:none;margin:0;padding:0}
+.papers li{border-bottom:1px solid var(--rule-soft)}
+.papers li:last-child{border-bottom:0}
+.paper{
+  display:flex;align-items:baseline;gap:14px;text-decoration:none;
+  padding:10px 6px 10px 0;transition:background .15s ease,padding .15s ease;
+}
+.paper:hover,.paper:focus-visible{background:#F6F8F7;padding-left:8px}
+.paper-title{flex:1;font-size:16px;line-height:1.45}
+.paper:hover .paper-title{color:var(--accent)}
+.paper-note{font-family:var(--mono);font-size:11.5px;color:var(--ink-3);white-space:nowrap}
+.paper-src{
+  font-family:var(--mono);font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;
+  color:var(--ink-3);white-space:nowrap;
+}
+.paper:hover .paper-src{color:var(--accent)}
+.tbd{font-family:var(--mono);font-size:12.5px;color:var(--ink-3);padding:8px 0;margin:0}
+
+/* ---------- footer ---------- */
+.foot{border-top:1px solid var(--rule);padding:26px 0 48px}
+.foot p{font-family:var(--mono);font-size:11.5px;color:var(--ink-3);margin:0}
+
+@media (prefers-reduced-motion:reduce){
+  *{transition:none!important;animation:none!important;scroll-behavior:auto!important}
+}
+@media print{
+  body{background:#fff}
+  .index,.masthead{display:none}
+  .session{break-inside:avoid;border-color:#ccc;box-shadow:none}
+}
+</style>
+</head>
+
+<body>
+
+<header class="masthead">
+  <div class="masthead-in">
+    <span class="mark" id="m-program"></span>
+    <span class="mark-sub" id="m-year"></span>
+  </div>
+</header>
+
+<main>
+  <div class="shell">
+    <section class="hero">
+      <p class="hero-year" id="hero-year"></p>
+      <h1 id="hero-title"></h1>
+      <ul class="hero-meta" id="hero-meta"></ul>
+      <div class="hero-intro" id="hero-intro"></div>
+    </section>
+
+    <section class="formats" id="formats" aria-label="Session format"></section>
+
+    <div class="body-grid">
+      <nav class="index" aria-label="Session index">
+        <p class="index-title">Sessions</p>
+        <div id="index"></div>
+      </nav>
+      <section id="sessions" aria-label="Schedule"></section>
+    </div>
+  </div>
+
+  <div class="shell">
+    <footer class="foot"><p id="foot"></p></footer>
+  </div>
+</main>
+
+<script>
+(function () {
+  const esc = s => String(s == null ? "" : s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+  const parse = iso => { const [y,m,d] = iso.split("-").map(Number); return new Date(y, m-1, d); };
+  const fmt = (dt, o) => dt.toLocaleDateString("en-US", o);
+  const slug = n => "session-" + String(n).replace(/\./g, "-");
+
+  function source(url) {
+    try {
+      const host = new URL(url).hostname.replace(/^www\./, "");
+      for (const key in JOURNALS) if (host === key || host.endsWith("." + key)) return JOURNALS[key];
+      return host;
+    } catch (e) { return ""; }
+  }
+
+  const today = new Date(); today.setHours(0,0,0,0);
+  const dated = PAGE.sessions.map(s => parse(s.date));
+  const nextIdx = dated.findIndex(d => d >= today);   // -1 once the year is over
+  const yearRunning = nextIdx !== -1;
+
+  // masthead + hero
+  document.getElementById("m-program").textContent = PAGE.program;
+  document.getElementById("m-year").textContent = PAGE.year;
+  document.getElementById("hero-year").textContent = PAGE.year;
+  document.getElementById("hero-title").textContent = PAGE.program;
+  document.title = PAGE.program + " Journal Club — " + PAGE.year;
+
+  document.getElementById("hero-meta").innerHTML =
+    (PAGE.meta || []).map(m => "<li>" + esc(m) + "</li>").join("") +
+    "<li>" + PAGE.sessions.length + " sessions this academic year</li>";
+
+  document.getElementById("hero-intro").innerHTML =
+    (PAGE.intro || []).map(p => "<p>" + esc(p) + "</p>").join("");
+
+  // format cards
+  document.getElementById("formats").innerHTML = (PAGE.formats || []).map(f => `
+    <article class="format">
+      <div class="format-head">
+        <h2>${esc(f.name)}</h2>
+        <span class="tag tag-${esc(f.kind)}">${esc(f.minutes || "")}</span>
+      </div>
+      <p class="format-summary">${esc(f.summary || "")}</p>
+      <p class="format-detail">${esc(f.detail || "")}</p>
+    </article>`).join("");
+
+  // sessions
+  document.getElementById("sessions").innerHTML = PAGE.sessions.map((s, i) => {
+    const dt = dated[i];
+    const isNext = i === nextIdx;
+    const isPast = yearRunning && dt < today;
+
+    const groups = (s.groups || []).map(g => {
+      const rows = (g.papers || []).length
+        ? `<ul class="papers">` + g.papers.map(p => `
+            <li><a class="paper" href="${esc(p.url)}" target="_blank" rel="noopener">
+              <span class="paper-title">${esc(p.title)}</span>
+              ${p.note ? `<span class="paper-note">${esc(p.note)}</span>` : ""}
+              <span class="paper-src">${esc(source(p.url))} &#8599;</span>
+            </a></li>`).join("") + `</ul>`
+        : `<p class="tbd">To be announced.</p>`;
+      return `<div class="group">
+        <div class="group-head">
+          <span class="tag tag-${esc(g.kind || "ebm")}">${esc(g.label)}</span>
+          <span class="group-rule"></span>
+        </div>${rows}</div>`;
+    }).join("");
+
+    return `<article class="session" id="${slug(s.number)}"
+              ${isNext ? 'data-next="true" aria-current="date"' : ""}
+              ${isPast ? 'data-past="true"' : ""}>
+      <div class="session-top">
+        <div class="date-rail">
+          <div class="date-weekday">${fmt(dt, {weekday:"long"})}</div>
+          <div class="date-day">${dt.getDate()}</div>
+          <div class="date-month">${fmt(dt, {month:"short"})} ${dt.getFullYear()}</div>
+        </div>
+        <div>
+          <div class="session-eyebrow">
+            <span class="session-num">Session ${esc(s.number)}</span>
+            ${isNext ? '<span class="badge-next">Up next</span>' : ""}
+          </div>
+          <h3>${esc(s.title)}</h3>
+          ${s.person ? `<p class="person"><span class="role">${esc(s.role || "Moderator")}:</span> ${esc(s.person)}</p>` : ""}
+          ${s.affiliation ? `<p class="affiliation">${esc(s.affiliation)}</p>` : ""}
+          ${s.note ? `<p class="session-note">${esc(s.note)}</p>` : ""}
+        </div>
+      </div>
+      ${groups ? `<div class="groups">${groups}</div>` : ""}
+    </article>`;
+  }).join("");
+
+  // side index
+  document.getElementById("index").innerHTML = PAGE.sessions.map((s, i) => `
+    <a href="#${slug(s.number)}" ${i === nextIdx ? 'data-next="true"' : ""}>
+      <span class="idx-num">${esc(s.number)}</span><span>${esc(s.title)}</span>
+    </a>`).join("");
+
+  document.getElementById("foot").textContent =
+    PAGE.program + " journal club · " + PAGE.year + " · " + PAGE.sessions.length + " sessions";
+})();
+</script>
+</body>
+</html>
